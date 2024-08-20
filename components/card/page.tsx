@@ -6,7 +6,7 @@ export default function Card() {
     return (
       <div
         key={produto.nome}
-        className="overflow-hidden border border-rose-300 ring-rose-300 group hover:ring-2 duration-300 max-w-[240px] rounded-3xl"
+        className="overflow-hidden shadow-lg group hover:shadow-rose-200 duration-500 max-w-[80vw] sm:max-w-[240px] rounded-3xl"
       >
         <Image
           className="w-full opacity-85 group-hover:opacity-100 group-hover:scale-105 duration-300 overflow-hidden"

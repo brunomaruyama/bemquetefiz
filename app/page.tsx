@@ -9,15 +9,17 @@ export default function Home() {
       <Header />
       <div
         id="home"
-        className="w-full h-[40vh] flex flex-col justify-center items-center p-4 overflow-clip"
+        className="w-full h-1/2 sm:h-[40vh] flex flex-col justify-center items-center p-4 flex-shrink"
       >
-        <Image
-          src="/logo.jpg"
-          width={400}
-          height={100}
-          alt="logo"
-          className="mix-blend-multiply"
-        />
+        <div className="flex flex-shrink">
+          <Image
+            src="/logo.jpg"
+            width={400}
+            height={100}
+            alt="logo"
+            className="mix-blend-multiply object-contain"
+          />
+        </div>
         <div className="w-4/5 sm:w-1/2 rounded-3xl relative bottom-0 bg-white/70 p-5">
           <p className="font-extralight">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
