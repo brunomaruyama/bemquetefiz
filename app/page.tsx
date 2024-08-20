@@ -27,7 +27,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="p-4">
+      <div className="p-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         <Card />
       </div>
       <WhatsButton />

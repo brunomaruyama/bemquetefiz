@@ -25,20 +25,20 @@ export default function Header() {
         height={40}
       />
       <button
-        className="absolute top-1 rounded-full right-5 sm:hidden h-12 w-12 bg-gray-300 grid place-items-center p-2"
+        className="absolute top-1 rounded-full right-5 sm:hidden h-12 w-12 hover:bg-rose-50 duration-300 grid place-items-center p-2"
         onClick={() => setOpenMenu((prev) => !prev)}
       >
         <div
           id={openMenu ? "topbar" : ""}
-          className="bg-gray-800  h-[1px] w-5 rounded-full transition-all duration-150"
+          className="bg-gray-800  h-[1px] w-5 rounded-full transition-all duration-300"
         ></div>
         <div
           id={openMenu ? "hidebar" : ""}
-          className="bg-gray-800  h-[1px] w-5 rounded-full transition-all duration-150"
+          className="bg-gray-800  h-[1px] w-5 rounded-full transition-all duration-300"
         ></div>
         <div
           id={openMenu ? "bottombar" : ""}
-          className="bg-gray-800  h-[1px] w-5 rounded-full transition-all duration-150"
+          className="bg-gray-800  h-[1px] w-5 rounded-full transition-all duration-300"
         ></div>
       </button>
       <div

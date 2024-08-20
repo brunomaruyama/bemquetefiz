@@ -15,14 +15,24 @@ export default function Card() {
           width={200}
           height={200}
         />
-        <div className="p-2 space-y-2 text-sm">
+        <div className="p-2 space-y-2 text-sm leading-tight">
           <h3 className="font-bold ">{produto.nome}</h3>
-          <p className="font-extralight">{produto.descricao}</p>
-          <p className="font-extralight">
-            <b>Ingredientes: </b>
-            {`${produto.ingredientes.join(", ")}`}
+          <p className="font-extralight overflow-hidden line-clamp-4">
+            {produto.descricao}
           </p>
-          <p className="text-center text-base font-bold">{produto.preco}</p>
+          <p className="font-semibold">
+            Ingredientes:
+            <span className="font-extralight overflow-hidden line-clamp-3">
+              {produto.ingredientes.join(", ")}
+            </span>
+          </p>
+          <p className="font-extralight">
+            <span className="font-semibold">Peso: </span>
+            {produto.peso}
+          </p>
+          <p className="text-center font-extralight">
+            R$ <span className="font-bold text-base">{produto.preco}</span>
+          </p>
         </div>
       </div>
     );
