@@ -8,6 +8,10 @@
   }
 }
 
+body {
+  background-color: #f9f5f5;
+}
+
 #home {
   background-image: url("/capa.jpg");
   background-color: #444;
@@ -16,13 +20,13 @@
   background-attachment: fixed;
 }
 
-#openmenu {
-  display: contents;
+#openmenu > ul {
+  content-visibility: visible;
 }
 
 @media (max-width: 600px) {
-  #closemenu {
-    display: none;
+  #closemenu > ul {
+    content-visibility: hidden;
   }
 }
 

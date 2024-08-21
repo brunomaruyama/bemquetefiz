@@ -12,8 +12,8 @@ export default function Card() {
           className="w-full opacity-85 group-hover:opacity-100 group-hover:scale-105 duration-300 overflow-hidden"
           src={produto.src}
           alt={produto.nome}
-          width={200}
-          height={200}
+          width={320}
+          height={320}
         />
         <div className="p-2 space-y-2 text-sm leading-tight">
           <h3 className="font-bold ">{produto.nome}</h3>

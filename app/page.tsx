@@ -9,23 +9,25 @@ export default function Home() {
       <Header />
       <div
         id="home"
-        className="w-full h-1/2 sm:h-[40vh] flex flex-col justify-center items-center p-4 flex-shrink"
+        className="w-full h-3/4 sm:h-1/2 flex flex-col justify-center items-center p-4"
       >
-        <div className="flex flex-shrink">
+        <div className="flex flex-shrink object-scale-down">
           <Image
             src="/logo.jpg"
             width={400}
             height={100}
             alt="logo"
-            className="mix-blend-multiply object-contain"
+            className="mix-blend-multiply h-auto w-auto object-contain"
           />
         </div>
-        <div className="w-4/5 sm:w-1/2 rounded-3xl relative bottom-0 bg-white/70 p-5">
-          <p className="font-extralight">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-            tempora voluptates possimus qui nobis voluptatem officia velit.
-            Atque fugit aliquid incidunt omnis, excepturi mollitia sint, ipsum
-            dicta ex molestias cumque!
+        <div className="w-4/5 lg:w-1/2 rounded-3xl bg-white/75 p-5">
+          <p className="font-extralight text-sm leading-snug">
+            “Sabonetes, hidratantes, shampoos e condicionadores…e sempre algo
+            mais! Aqui você encontra seus produtos para cuidados diários da pele
+            e dos cabelos, formulados com ingredientes provenientes da natureza
+            e todos aromatizados com óleos essenciais. São feitos por mim,
+            artesanalmente, em pequenos lotes, tornando-os únicos e especiais.
+            Sinta o BemQueTeFiz à sua pele e ao meio ambiente!”
           </p>
         </div>
       </div>
