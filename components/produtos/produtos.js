@@ -113,7 +113,6 @@ export const produtos = [
     preco: "10",
     descricao:
       "Latinhas charmosas estilo mandala, para você carregar seu shampu sólido em sua bagagem para viagens",
-    peso: "",
     src: "/produtos-14.jpg",
   },
   {
@@ -142,7 +141,7 @@ export const produtos = [
     ],
     descricao:
       "Em embalagem pet com válvula spray, é um fortalecedor dos fios. Agitar antes de aplicar no couro cabeludo, massagear e deixar (não é para ser removido, o aroma é muito agradável!). Faça uso 3 vezes por semana",
-    conteúdo: "110 ml",
+    conteudo: "110 ml",
     src: "/produtos-2.jpg",
   },
   {
@@ -210,7 +209,7 @@ export const produtos = [
     ],
     descricao:
       "No charmoso vidrinho roll-on, aplique pós-banho, massageando do colo, subindo pelo pescoço até o rosto, com movimentos suaves e ascendentes, e se dê esse luxo de relaxar com o maravilhoso perfume da camomila azul!",
-    contem: "10ml",
+    conteudo: "10ml",
     src: "/produtos-19.jpg",
   },
   {

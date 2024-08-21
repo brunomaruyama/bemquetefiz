@@ -27,8 +27,10 @@ export default function Card() {
             </span>
           </p>
           <p className="font-extralight">
-            <span className="font-semibold">Peso: </span>
-            {produto.peso}
+            <span className="font-semibold">
+              {produto.peso ? "Peso: " : "Conteudo: "}{" "}
+            </span>
+            {produto.peso ? produto.peso : produto.conteudo}
           </p>
           <p className="text-center font-extralight">
             R$ <span className="font-bold text-base">{produto.preco}</span>
