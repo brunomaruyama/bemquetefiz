@@ -17,12 +17,12 @@ export default function Card() {
         />
         <div className="p-2 space-y-2 text-sm leading-tight">
           <h3 className="font-bold ">{produto.nome}</h3>
-          <p className="font-extralight overflow-hidden line-clamp-4">
+          <p className="font-extralight overflow-hidden ">
             {produto.descricao}
           </p>
           <p className="font-semibold">
-            Ingredientes:
-            <span className="font-extralight overflow-hidden line-clamp-3">
+            Ingredientes:{" "}
+            <span className="font-extralight overflow-hidden">
               {produto.ingredientes.join(", ")}
             </span>
           </p>
