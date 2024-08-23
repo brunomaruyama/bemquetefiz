@@ -47,11 +47,10 @@ body {
 }
 
 .card {
-  display: grid;
-  grid-template-rows: auto;
-  transition: grid-template-rows 0.5s ease-out;
+  height: fit-content;
+  transition: height 0.5s ease-out;
 }
 
 .card:hover {
-  grid-template-rows: 1fr;
+  height: calc-size(auto);
 }

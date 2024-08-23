@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../../app/globals.css";
 
 export default function Header() {
-  const sections = ["INÍCIO", "PRODUTOS", "SOBRE", "CONTATO"];
+  const sections = ["INÍCIO", "SOBRE"];
   const listSection = sections.map((section) => (
     <li
       className="hover:text-rose-400 hover:translate-y-1 duration-300 font-extralight transition-all"
@@ -46,7 +46,13 @@ export default function Header() {
         id={openMenu ? "openmenu" : "closemenu"}
         className="sm:contents clear-both transition-all duration-500"
       >
-        <ul className="mt-1 mr-12 sm:flex sm:space-x-3">{listSection}</ul>
+        <ul
+          className={`mt-1 mr-12 sm:flex sm:space-x-3 grid ${
+            openMenu ? "grid-cols-[1fr]" : "grid-cols-[0fr]"
+          } transition-[grid-template-rows] duration-500`}
+        >
+          {listSection}
+        </ul>
       </div>
     </header>
   );
