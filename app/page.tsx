@@ -2,6 +2,7 @@ import Header from "@/components/header/page";
 import Card from "../components/card/page";
 import Image from "next/image";
 import WhatsButton from "@/components/whatsbutton/whatsbutton";
+import Footer from "@/components/footer/page";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <div className="p-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         <Card />
       </div>
+      <Footer />
       <WhatsButton />
     </main>
   );
