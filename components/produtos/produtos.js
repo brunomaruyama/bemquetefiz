@@ -109,7 +109,6 @@ export const produtos = [
   {
     nome: "Latinhas porta-shampu",
     categoria: "cabelos",
-    ingredientes: [""],
     preco: "10",
     descricao:
       "Latinhas charmosas estilo mandala, para você carregar seu shampu sólido em sua bagagem para viagens",

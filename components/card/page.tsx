@@ -1,7 +1,8 @@
 import { produtos } from "../produtos/produtos";
 import Image from "next/image";
+import { ProductProps } from "../../types/products";
 
-export default function Card() {
+export default function Card(produto: ProductProps) {
   return produtos.map((produto) => {
     return (
       <div
@@ -25,16 +26,17 @@ export default function Card() {
             {produto.descricao}
           </p>
           <p className="font-semibold">
-            Ingredientes:{" "}
+            {produto.ingredientes ? "Ingredientes: " : ""}
             <span
               className={` font-extralight line-clamp-3 duration-300 group-hover:line-clamp-none transition-all`}
             >
-              {produto.ingredientes.join(", ")}
+              {produto.ingredientes?.join(", ")}
             </span>
           </p>
           <p className="font-extralight">
             <span className="font-semibold">
-              {produto.peso ? "Peso: " : "Conteudo: "}{" "}
+              {produto.peso ? "Peso: " : ""}
+              {produto.conteudo ? "Conteúdo: " : ""}
             </span>
             {produto.peso ? produto.peso : produto.conteudo}
           </p>
