@@ -4,6 +4,7 @@ import Image from "next/image";
 import WhatsButton from "@/components/whatsbutton/whatsbutton";
 import Footer from "@/components/footer/page";
 import { ProductProps } from "@/types/products";
+import { produtos } from "@/components/produtos/produtos";
 
 export default function Home() {
   return (
@@ -34,7 +35,9 @@ export default function Home() {
         </div>
       </div>
       <div className="p-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-        <Card id={1} nome="Produto 1" descricao="Descrição do produto 1" />
+        {produtos.map((produto) => (
+          <Card key={produto.nome} {...produto} />
+        ))}
       </div>
       <Footer />
       <WhatsButton />
