@@ -22,8 +22,8 @@ export default function Home() {
             className="mix-blend-multiply h-auto w-auto object-contain"
           />
         </div>
-        <div className="w-4/5 lg:w-1/3 rounded-3xl bg-white/75 p-6 relative shadow-lg z-10 my-4">
-          <p className="font-extralight text-md leading-relaxed text-center">
+        <div className="w-4/5 lg:w-1/3 rounded-3xl bg-white/75 p-4 sm:p-6 relative shadow-lg z-10 my-4">
+          <p className="font-extralight sm:text-md leading-normal sm:leading-relaxed text-center">
             “Sabonetes, hidratantes, shampoos e condicionadores…e sempre algo
             mais! Aqui você encontra seus produtos para cuidados diários da pele
             e dos cabelos, formulados com ingredientes provenientes da natureza
