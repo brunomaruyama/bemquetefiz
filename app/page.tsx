@@ -34,10 +34,12 @@ export default function Home() {
         </div>
       </div>
       <div className="p-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-        <Card {...produtos[0]} />
+        <Card />
       </div>
       <Footer />
-      <WhatsButton />
+      <div className="w-full sm:w-4/5 fixed bottom-0 flex justify-end items-end px-[6vw] pb-4">
+        <WhatsButton />
+      </div>
     </main>
   );
 }

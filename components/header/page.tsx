@@ -17,7 +17,7 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="w-full flex justify-between items-center px-[5vw] py-3">
+    <header className="w-full sm:w-4/5 flex justify-between items-center px-[5vw] py-3">
       <Image
         src="/logo.jpg"
         alt="logo bem que te fiz"

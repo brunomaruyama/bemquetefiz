@@ -1,7 +1,7 @@
 export default function WhatsButton() {
   return (
     <a href="https://wa.me/5511976190522">
-      <button className="rounded-full hover:-translate-y-2 duration-300 group fixed right-5 bottom-5">
+      <button className="rounded-full hover:-translate-y-2 duration-300 group">
         <svg
           className="group-hover:fill-green-700 duration-300"
           fill="#25D366"

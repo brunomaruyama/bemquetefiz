@@ -1,8 +1,7 @@
 import { produtos } from "../produtos/produtos";
 import Image from "next/image";
-import { ProductProps } from "../../types/products";
 
-export default function Card(produto: ProductProps) {
+export default function Card() {
   return produtos.map((produto) => {
     return (
       <div
