@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../../app/globals.css";
 
 export default function Header() {
-  const sections = ["INÍCIO", "SOBRE"];
+  const sections = ["INÍCIO"];
   const listSection = sections.map((section) => (
     <li
       className="hover:text-rose-400 hover:translate-y-1 duration-300 font-extralight transition-all"
